@@ -56,15 +56,39 @@
 		2FF9018C28A9AAC900274CDA /* MrMustache */ = {
 			isa = PBXGroup;
 			children = (
+				2FF901A328A9AC7500274CDA /* Model */,
+				2FF901A228A9AC6500274CDA /* View */,
+				2FF901A128A9AC6100274CDA /* Controller */,
 				2FF9018D28A9AAC900274CDA /* AppDelegate.swift */,
 				2FF9018F28A9AAC900274CDA /* SceneDelegate.swift */,
-				2FF9019128A9AAC900274CDA /* ViewController.swift */,
 				2FF9019328A9AAC900274CDA /* Main.storyboard */,
 				2FF9019628A9AACB00274CDA /* Assets.xcassets */,
 				2FF9019828A9AACB00274CDA /* LaunchScreen.storyboard */,
 				2FF9019B28A9AACB00274CDA /* Info.plist */,
 			);
 			path = MrMustache;
+			sourceTree = "<group>";
+		};
+		2FF901A128A9AC6100274CDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FF9019128A9AAC900274CDA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FF901A228A9AC6500274CDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FF901A328A9AC7500274CDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
