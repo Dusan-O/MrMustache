@@ -45,6 +45,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         flowLayout.itemSize = CGSize(width: width, height: width)
         flowLayout.scrollDirection = .horizontal
         collectionView.collectionViewLayout = flowLayout
+        collectionView.layer.cornerRadius = 25
+        collectionView.layer.borderWidth = 1
+        collectionView.layer.borderColor = UIColor.systemMint.cgColor
+        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -62,7 +66,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //
+        let index = indexPath.item
+        currentMustacheIndex = index
+        setupMustache()
     }
 }
 

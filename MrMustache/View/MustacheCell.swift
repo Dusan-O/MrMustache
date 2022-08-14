@@ -14,6 +14,14 @@ class MustacheCell: UICollectionViewCell {
     var image: UIImage? {
         didSet {
             iv.image = image
+            setupCell()
         }
+    }
+    
+    func setupCell() {
+        iv.layer.borderColor = UIColor.systemMint.cgColor
+        iv.layer.borderWidth = 1
+        iv.layer.cornerRadius = frame.width / 2
+        iv.contentMode = .scaleAspectFill
     }
 }
