@@ -13,6 +13,8 @@
 		2FF9019528A9AAC900274CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9019328A9AAC900274CDA /* Main.storyboard */; };
 		2FF9019728A9AACB00274CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9019628A9AACB00274CDA /* Assets.xcassets */; };
 		2FF9019A28A9AACB00274CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9019828A9AACB00274CDA /* LaunchScreen.storyboard */; };
+		2FF901A528A9ACA400274CDA /* Mustache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF901A428A9ACA400274CDA /* Mustache.swift */; };
+		2FF901A728A9AD0E00274CDA /* AllMustaches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF901A628A9AD0E00274CDA /* AllMustaches.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2FF9019628A9AACB00274CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FF9019928A9AACB00274CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FF9019B28A9AACB00274CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF901A428A9ACA400274CDA /* Mustache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mustache.swift; sourceTree = "<group>"; };
+		2FF901A628A9AD0E00274CDA /* AllMustaches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMustaches.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		2FF901A328A9AC7500274CDA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2FF901A428A9ACA400274CDA /* Mustache.swift */,
+				2FF901A628A9AD0E00274CDA /* AllMustaches.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF901A728A9AD0E00274CDA /* AllMustaches.swift in Sources */,
 				2FF9019228A9AAC900274CDA /* ViewController.swift in Sources */,
 				2FF9018E28A9AAC900274CDA /* AppDelegate.swift in Sources */,
 				2FF9019028A9AAC900274CDA /* SceneDelegate.swift in Sources */,
+				2FF901A528A9ACA400274CDA /* Mustache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
