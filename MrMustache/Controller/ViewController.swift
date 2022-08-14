@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMustache()
-        
+        setup()
     }
     
     func setupMustache() {
@@ -29,7 +29,40 @@ class ViewController: UIViewController {
         mustacheDescription.text = mustache.descriptionMustache
         mustacheImageView.image = mustache.image
     }
+}
 
-
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    var id: String {
+        return "MustacheCell"
+    }
+    
+    func setup() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        let flowLayout = UICollectionViewFlowLayout()
+        let width = collectionView.frame.height * 0.85
+        flowLayout.itemSize = CGSize(width: width, height: width)
+        flowLayout.scrollDirection = .horizontal
+        collectionView.collectionViewLayout = flowLayout
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return mustaches.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath) as! MustacheCell
+        cell.image = mustaches[indexPath.item].image
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //
+    }
 }
 

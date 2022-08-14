@@ -30,7 +30,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="40K-ax-OJR">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MustacheCell" id="40K-ax-OJR" customClass="MustacheCell" customModule="MrMustache" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="buC-fF-itt">
@@ -49,6 +49,9 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="77" height="77"/>
+                                        <connections>
+                                            <outlet property="iv" destination="xuy-eW-BGW" id="ClZ-ys-8sI"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
