@@ -9,9 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mustacheLabel: UILabel!
+    @IBOutlet weak var mustacheImageView: UIImageView!
+    @IBOutlet weak var mustacheDescription: UITextView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var mustaches: [Mustache] = AllMustaches.get.all
+    var currentMustacheIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupMustache()
+        
+    }
+    
+    func setupMustache() {
+        let mustache = mustaches[currentMustacheIndex]
+        mustacheLabel.text = mustache.title
+        mustacheDescription.text = mustache.descriptionMustache
+        mustacheImageView.image = mustache.image
     }
 
 
