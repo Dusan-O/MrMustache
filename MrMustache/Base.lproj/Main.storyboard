@@ -60,7 +60,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="BaG-LE-OK4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
                                 <color key="textColor" name="systemMintColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
